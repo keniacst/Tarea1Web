@@ -1,0 +1,496 @@
+/* comentario en css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    background-image: url(bichos2.png);
+    background-repeat: no repeat;
+    /* !important <eso haria que se sobrescribiera a los otros font size  */
+    font-size: 25px;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    background-color: #c4c492;
+    color: #4a4a4a;
+}
+
+
+/* clase titulo */
+.titulo {
+    text-align: center;
+    color: #fff;
+    display: block;
+    font-size: 90px;
+    font-weight: 400;
+    font-family: 'Pacifico', 'Roboto', sans-serif;
+    text-shadow: 5px 6px 12px rgb(74 74 74);
+}
+.titulo2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Pacifico', 'Roboto', sans-serif;
+    margin-top: 30px;
+    text-shadow: 2px 5px 10px rgb(80 76 60);
+}
+
+.titulo3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Pacifico', 'Roboto', sans-serif;
+    text-shadow: 2px 5px 7px rgb(64 64 64);
+}
+
+.entrada {
+    margin-bottom: 5px;
+    margin-left: 100px;
+    color: #ffffff;
+}
+
+.entrada1 {
+    text-align: center;
+    margin-bottom: 5px;
+
+    margin-left: 18px;
+    color: #ffffff;
+}
+
+.entrada2 {
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 18px;
+    color: #ffffff;
+}
+
+#main {
+    width: 50%;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-bottom: 5%;
+    padding: 40px;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #85b556;
+    /* background-image: url(catitos2.png); */
+    background-color: rgb(68 95 53 / 85%);
+    box-shadow: 4px 6px 8px 2px #5b5d4a;
+}
+
+#mainInfo {
+    width: 40%;
+    color: #fff;
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-bottom: 5%;
+    padding: 20px;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #92b95e;
+    /* background-image: url(catitos2.png); */
+    background-color: rgb(68 95 53 / 85%);
+    box-shadow: 4px 6px 8px 2px #5b5d4a;
+}
+
+
+.leyenda {
+    width: 40%;
+    margin-bottom: 10px;
+    display: block;
+    margin-right: 20px;
+}
+
+
+#overlay img {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 1%;
+    width: 200px;
+}
+
+#overlay.currently-loading img {
+    display: block;
+    width: 100%;
+    heigth: 100%;
+}
+
+
+.flex-container {
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction
+       and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: center;
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.flex-item {
+    opacity: 0.9;
+    width: 350px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background-image: linear-gradient(#d4d35f, #6d9a45);
+    border: 3px solid #74ad41;
+    box-shadow: 0px 8px 17px 1px #37521f;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.flex-item:hover {
+    opacity: 1.0;
+}
+
+.flex-item1 {
+    opacity: 0.9;
+    width: 350px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background-image: linear-gradient(#d4d35f, #6d9a45);
+    border: 3px solid #74ad41;
+    box-shadow: 0px 8px 17px 1px #37521f;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.flex-item1:hover {
+    opacity: 1.0;
+}
+
+.flex-item2 {
+    opacity: 0.9;
+    width: 350px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background-image: linear-gradient(#d4d35f, #6d9a45);
+    border: 3px solid #74ad41;
+    box-shadow: 0px 8px 17px 1px #37521f;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.flex-item2:hover {
+    opacity: 1.0;
+}
+
+.flex-item3 {
+    opacity: 0.9;
+    width: 350px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background-image: linear-gradient(#d4d35f, #6d9a45);
+    border: 3px solid #74ad41;
+    box-shadow: 0px 8px 17px 1px #37521f;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 90px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.flex-item3:hover {
+    opacity: 1.0;
+}
+
+a:link {
+    font-weight: lighter !important;
+    color: white;
+}
+
+/* A link that has been visited */
+a:visited {
+    font-weight: lighter !important;
+    color: white;
+}
+
+/* A link that is hovered on */
+a:hover {
+    font-weight: lighter !important;
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 50px;
+    }
+
+    .entrada {
+        font-size: 10px;
+    }
+}
+
+select#region {
+   color: #ffffff;
+    width: 35%;
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid;
+    border-color: #816f46;
+    background-color: #d3a269;
+    border-radius: 10px;
+}
+
+select#comuna {
+   color: #ffffff;
+    width: 35%;
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid;
+    border-color: #4c7724;
+    background-color: #8dc35a;
+    border-radius: 10px;
+}
+
+textarea#sector {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    width: 60%;
+    padding: 8px;
+    border: 5px solid;
+    border-color: #99d85d;
+    box-shadow: 8px 6px 8px -3px rgb(0 0 0 / 17%);
+    border-radius: 8px;
+}
+
+textarea#nombre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 40%;
+    border: 3px solid;
+    padding: 5px;
+    border-color: #99d85d;
+    box-shadow: 8px 6px 8px -3px rgb(0 0 0 / 17%);
+    border-radius: 8px;
+}
+textarea#email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 40%;
+    border: 3px solid;
+    padding: 5px;
+    border-color: #99d85d;
+    box-shadow: 8px 6px 8px -3px rgb(0 0 0 / 17%);
+    border-radius: 8px;
+}
+
+textarea#celular {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    width: 40%;
+    border: 3px solid;
+    padding: 5px;
+    border-color: #99d85d;
+    box-shadow: 8px 6px 8px -3px rgb(0 0 0 / 17%);
+    border-radius: 8px;
+}
+
+textarea#dia-hora-avistamiento {
+    font-family: sans-serif;
+    display: inline-table;
+    font-size: 16px;
+    color: #4a4a4a;
+    width: 40%;
+    padding: 8px;
+    border: 3px solid;
+    border-color: #99d85d;
+    box-shadow: 8px 6px 8px -3px rgb(0 0 0 / 17%);
+    border-radius: 8px;
+}
+
+select#tipo-avistamiento {
+    color: #ffffff;
+    width: 30%;
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid;
+    border-color: #4c7724;
+    background-color: #8dc35a;
+    border-radius: 10px;
+}
+
+
+select#estado-avistamiento {
+    color: #ffffff;
+    width: 30%;
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid;
+    border-color: #816f46;
+    background-color: #d3a269;
+    border-radius: 10px;
+}
+
+input::-webkit-file-upload-button {
+    color: #ffffff;
+    margin-bottom: 13px;
+    font-size: 18px;
+    padding: 9px;
+    border: 2px solid;
+    border-color: #8dc35a;
+    background-image: linear-gradient( #94d05d, #526f34);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button {
+    color: #ffffff;
+    margin-left: 30px;
+    background-color: #74a749;
+    width: 20%;
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid;
+    border-color: #90c75a;
+    border-radius: 8px;
+    box-shadow: 5px 7px 7px -3px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+button#addavistamiento {
+    color: #ffffff;
+    width: 30%;
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid;
+    border-color: #816f46;
+    background-color: #d3a269;
+    border-radius: 8px;
+    box-shadow: 5px 7px 7px -3px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+button#enviarinfo {
+    font-size: 24px;
+    color: #ffffff;
+    width: 60%;
+    margin-left: 20%;
+    padding: 20px;
+    margin-top: 30px;
+    background-image: linear-gradient( #94d05d, #526f34);
+}
+
+/* tabla */
+#customers {
+    width: 150px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-bottom: 2px solid white;
+}
+/* tr cada fila, th cada columna */
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:nth-child(odd) {
+    background-color: #e6e6e6;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    background-color: #78a148;
+    color: white;
+}
+
+.entrada {
+    margin-bottom: 15px;
+}
+
+button#myBtn{
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 25%;
+    padding: 20px;
+    background-image: linear-gradient( #94d05d, #526f34);
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    text-align: center;
+    width: 50%;
+    border: 3px solid #7ba05c;
+    border-radius: 30px;
+    background-image: linear-gradient(#687f51, #415431);
+    margin: auto;
+    padding: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

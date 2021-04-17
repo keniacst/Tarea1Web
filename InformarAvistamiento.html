@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css%22%3E
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js%22%3E</script>
+	<!-- comentario equis -->
+	<meta charset="UTF-8">
+	<title>Informar Avistamiento</title>
+	<link rel="stylesheet" href="estilotarea1.css">
+	<script src="nose.js"></script>
+</head>
+
+<body>
+<div id="overlay"><img src="bug.gif"></div>
+<div class="titulo"> Bichitos</div>
+
+
+<div id="mainInfo">
+
+	<form id="miformulario" method="post" action="" onsubmit="return validacion()">
+
+		<div id="estoychata">
+		<div class="titulo3"> Lugar</div>
+
+		<div class="entrada">
+			<div class="leyenda"> Región</div>
+			<select name="region" id="region" onchange= "crearComuna(this.value)">
+<!-- 			<option value="mal" disabled selected value> - Selecciona -  </option> -->
+			</select>
+
+		</div>
+
+		<div class="entrada">
+			<div class="leyenda"> Comuna</div>
+			<select name="comuna" id="comuna" >
+<!-- 				<option value="mal" disabled selected value> - Selecciona -  </option> -->
+			</select>
+
+		</div>
+
+		<div class="entrada">
+			<div class="leyenda">Sector</div>
+			<textarea name="sector" id="sector" rows="10" cols="200" maxlength="1000"
+					  placeholder="Población, ubicación de referencia, etc."></textarea>
+
+		</div>
+
+		<div class="titulo3"> Datos de Contacto</div>
+
+		<div class="entrada">
+			<div class="leyenda">Nombre</div>
+
+			<textarea name="nombre" id="nombre" rows="1"
+					  cols="100" maxlength="1000"></textarea>
+
+		</div>
+
+		<div class="entrada">
+			<div class="leyenda">Email</div>
+
+			<textarea name="email" id="email" rows="1"
+					  cols="100" maxlength="1000"></textarea>
+		</div>
+
+		<div class="entrada">
+			<div class="leyenda">Número de celular</div>
+
+			<textarea name="celular" id="celular" rows="1"
+					  cols="15" maxlength="1000" placeholder="Ej: 95864XXXX"></textarea>
+		</div>
+
+		<div id="repeat">
+			<div class="titulo3"> Información de Avistamiento</div>
+			<div class="entrada">
+				<div class="leyenda">Día hora</div>
+
+				<textarea name="dia-hora-avistamiento" id="dia-hora-avistamiento" rows="1"
+						  cols="20" maxlength="1000" placeholder="Año-mes-día hora:minuto"></textarea>
+			</div>
+
+			<div class="entrada">
+				<div class="leyenda"> Tipo</div>
+				<select name="tipo-avistamiento" id="tipo-avistamiento">
+					<option disabled selected value> - Selecciona -</option>
+					<option> No sé</option>
+					<option> Insecto</option>
+					<option> Arácnico</option>
+					<option> Miriápodo</option>
+				</select>
+			</div>
+			<div class="entrada">
+				<div class="leyenda"> Estado</div>
+				<select name="estado-avistamiento" id="estado-avistamiento">
+					<option disabled selected value> - Selecciona -</option>
+					<option> No sé</option>
+					<option> Vivo</option>
+					<option> Muerto</option>
+				</select>
+			</div>
+
+			<div class="entrada">
+				<div class="leyenda">Foto</div>
+				<input type="file" id="foto-avistamiento" name="foto-avistamiento">
+				<button type="button" id="add" onclick="agregarFoto()"> Agregar foto</button>
+			</div>
+
+			<div class="entrada">
+				<div class="leyenda"> Informar Avistamiento </div>
+				<button type="button" id="addavistamiento" onclick="agregarAvistamiento()"> Agregar Avistamiento</button>
+			</div>
+		</div>
+		</div>
+
+		<button type="button" id="myBtn">Enviar información de avistamiento</button>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p> ¿Estás seguro que deseas envíar esta información?</p>
+				<p>
+					<button type="submit" id="modalsi" onclick="siSeguro()"> Sí, estoy totalmente y absolutamente
+						segurx
+					</button>
+					<button type="button" id="modalno" onclick="noSeguro()"> No estoy
+						segurx, quiero volver al formulario
+					</button>
+
+				</p>
+			</div>
+
+		</div>
+
+	</form>
+</div>
+
+<script> crearRegion()
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function noSeguro() {
+    modal.style.display = "none";
+}
+function siSeguro() {
+    <a href="Portada.html">Volver a la portada</a>
+    modal.style.display = "none";
+}
+</script>
+</body>
+</html>
