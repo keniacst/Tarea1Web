@@ -1,4 +1,3 @@
-
 m = 0;
 function agregarFoto() {
     if (m < 4) {
