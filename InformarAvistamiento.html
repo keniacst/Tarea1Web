@@ -83,27 +83,27 @@
 			<div class="entrada">
 				<div class="leyenda"> Tipo</div>
 				<select name="tipo-avistamiento" id="tipo-avistamiento">
-					<option disabled selected value> - Selecciona -</option>
-					<option> No sé</option>
-					<option> Insecto</option>
-					<option> Arácnico</option>
-					<option> Miriápodo</option>
+					<option value='mal' disabled selected value> - Selecciona -</option>
+					<option value='1'> No sé</option>
+					<option value='2'> Insecto</option>
+					<option value='3'> Arácnico</option>
+					<option value='4'>  Miriápodo</option>
 				</select>
 			</div>
 			<div class="entrada">
 				<div class="leyenda"> Estado</div>
 				<select name="estado-avistamiento" id="estado-avistamiento">
-					<option disabled selected value> - Selecciona -</option>
-					<option> No sé</option>
-					<option> Vivo</option>
-					<option> Muerto</option>
+					<option value='mal' disabled selected value> - Selecciona -</option>
+					<option value='1'> No sé</option>
+					<option value='2'> Vivo</option>
+					<option value='3'> Muerto</option>
 				</select>
 			</div>
 
 			<div class="entrada">
 				<div class="leyenda">Foto</div>
 				<input type="file" id="foto-avistamiento" name="foto-avistamiento">
-				<button type="button" id="add" onclick="agregarFoto()"> Agregar foto</button>
+				<button type="button" id="foto-avistamiento" onclick="agregarFoto()"> Agregar foto</button>
 			</div>
 
 			<div class="entrada">
@@ -122,7 +122,7 @@
 				<span class="close">&times;</span>
 				<p> ¿Estás seguro que deseas envíar esta información?</p>
 				<p>
-					<button type="submit" id="modalsi"> Sip
+					<button type="submit" id="modalsi"> Sí, estoy total y absolutamente seguro
 					</button>
 					<button type="button" id="modalno" onclick="noSeguro()"> No estoy
 						segurx, quiero volver al formulario

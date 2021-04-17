@@ -2,7 +2,7 @@ m = 0;
 function agregarFoto() {
     if (m < 4) {
         var h = document.getElementById("foto-avistamiento");
-        h.insertAdjacentHTML("beforebegin", "<input type='file' id='foto-avistamiento'>");
+        h.insertAdjacentHTML("beforebegin", "<input type='file' id='foto-avistamiento'+ m>");
         m++
     } else {
         ;
@@ -111,12 +111,15 @@ function validacion() {
     let selectsector = document.getElementById("sector").value;
     let selectnombre = document.getElementById("nombre").value;
     let selectemail = document.getElementById("email").value;
-    let selectcelular= document.getElementById("celular").value;
+    let selectcelular = document.getElementById("celular").value;
     let selectdiahora = document.getElementById("dia-hora-avistamiento").value;
     let selecttipo = document.getElementById("tipo-avistamiento").value;
     let selectestado = document.getElementById("estado-avistamiento").value;
+    let selectfoto = document.getElementById("foto-avistamiento").value;
     let regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    let regexnum = /^\d+$/
+    let regexnum = /^[0-9]{9}$/;
+    var regexdia = /^([1-9]\d{3}\-(0[1-9]|1[0-2])\-(0[1-9]|[12]\d|3[01])[\ ]([01]?[0-9]|2[0-3]):[0-5][0-9])$/;
+
     if (selectregion === "mal") {
         // Si no se cumple la condicion...
         alert('[ERROR] Debe seleccionar una región');
@@ -140,6 +143,28 @@ function validacion() {
     } else if (!regex.test(String(selectemail).toLowerCase())) {  //Esto hace que sea obligatorio
         alert('[error uwu] Correo no válido');
         return false;
+    } else if (!regexnum.test(selectcelular) || selectcelular === "")
+    {  //Esto hace que sea obligatorio
+        if (selectcelular === "") {
+            return true;
+        } else {
+            alert('[error uwu] Numero no válido, debe tener 9 dígitos');
+            return false;
+        }
+    } else if (!regexdia.test(selectdiahora)) {  //Esto hace que sea obligatorio
+        alert('[error uwu] Formato de día y hora no válido');
+        return false;
+    } else if (selecttipo === "mal") {
+        // Si no se cumple la condicion...
+        alert('[ERROR] Debe seleccionar un tipo');
+        return false;
+    } else if (selectestado === "mal") {
+        // Si no se cumple la condicion...
+        alert('[ERROR] Debe seleccionar un estado');
+        return false;
+    } else if (selectfoto === "") {
+        // Si no se cumple la condicion...
+        alert('[ERROR] Debe seleccionar una foto');
+        return false;
     }
-
 }
