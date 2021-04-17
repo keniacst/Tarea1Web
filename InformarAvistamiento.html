@@ -19,7 +19,7 @@
 
 <div id="mainInfo">
 
-	<form id="miformulario" method="post" action="" onsubmit="return validacion()">
+	<form id="miformulario" method="post" action="Informado.html" onsubmit="return validacion()">
 
 		<div id="estoychata">
 		<div class="titulo3"> Lugar</div>
@@ -122,7 +122,7 @@
 				<span class="close">&times;</span>
 				<p> ¿Estás seguro que deseas envíar esta información?</p>
 				<p>
-					<button id="modalsi" onclick="siSeguro()"> Sip
+					<button type="submit" id="modalsi"> Sip
 					</button>
 					<button type="button" id="modalno" onclick="noSeguro()"> No estoy
 						segurx, quiero volver al formulario
@@ -167,11 +167,7 @@ function noSeguro() {
     modal.style.display = "none";
 }
 
-function siSeguro() {
- //   let REFseguro = document.getElementById("siseguro");
-  //  REFseguro.onclick = miformulario.submit();
-	document.getElementById("formulario").submit();
-}
+
 
 </script>
 </body>
